@@ -25,6 +25,7 @@
         "react-date-range": "^1.4.0",
         "react-dom": "18.0.0",
         "react-hot-toast": "^2.3.0",
+        "sqlite3": "^5.1.7",
         "tailwind-scrollbar-hide": "^1.1.7"
     },
     "devDependencies": {
