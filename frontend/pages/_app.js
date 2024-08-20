@@ -1,5 +1,7 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+const punycode = require('punycode');
+
 import '../styles/globals.css'
 // import WalletConnectionProvider from '../context/WalletConnectionProvider';
 

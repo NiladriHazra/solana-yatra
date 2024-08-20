@@ -14,9 +14,6 @@
         "export": "npm run build && next export -o _static"
     },
     "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "next": "^14.2.5",
         "@badrap/bar-of-progress": "^0.2.1",
         "@headlessui/react": "^1.6.6",
         "@heroicons/react": "^2.0.7",
@@ -28,7 +25,11 @@
         "@solana/web3.js": "^1.56.0",
         "better-sqlite3": "^11.1.2",
         "date-fns": "^2.29.2",
+        "next": "^14.2.5",
+        "punycode": "^2.3.1",
+        "react": "^18.2.0",
         "react-date-range": "^1.4.0",
+        "react-dom": "^18.2.0",
         "react-hot-toast": "^2.3.0",
         "tailwind-scrollbar-hide": "^1.1.7"
     },

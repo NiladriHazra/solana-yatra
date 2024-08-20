@@ -12,6 +12,8 @@ import { format } from 'date-fns'
 import { useWallet } from '@solana/wallet-adapter-react'
 
 
+const punycode = require('punycode');
+
 export default function Home() {
     const {connected, publicKey} = useWallet()
     const [showReservedListing, setShowReservedListing] = useState(false)
