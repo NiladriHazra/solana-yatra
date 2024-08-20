@@ -1,4 +1,4 @@
-export default [
+const listingsData =  [
     {
         id: '1',
         location: 'Abiansemal',
@@ -88,3 +88,5 @@ export default [
         reservation: null,
     },
 ]
+
+export default listingsData;

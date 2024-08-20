@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .phantom-button:hover {
-    background-color: rgb(243 244 246) !important;
+    background-color: rgb(243 244 246) !important; /* Light grey on hover */
 }
