@@ -10,12 +10,19 @@ import EditListingModal from '../components/Listing/EditListingModal'
 import ReserveListingModal from '../components/Listing/ReserveListingModal'
 import { format } from 'date-fns'
 import { useWallet } from '@solana/wallet-adapter-react'
+import { useAirbnb } from '../hooks/useAirbnb'
 
 
 const punycode = require('punycode');
 
 export default function Home() {
+
+
+    
     const {connected, publicKey} = useWallet()
+    const {initializeUser, airbnbs, bookings, transactionPending, addAirbnb, updateAirbnb, removeAirbnb, bookAirbnb, cancelBooking, initialized} = useAirbnb()
+    // console.log(airbnbs, "👈")
+
     const [showReservedListing, setShowReservedListing] = useState(false)
     const [listings, setListings] = useState(listingsData)
     const [addListingModalOpen, setAddListingModalOpen] = useState(false)
@@ -110,7 +117,7 @@ export default function Home() {
             <Head>
                 <title>Yatra</title>
             </Head>
-            <Header connected={connected} publicKey={publicKey} />
+            <Header connected={connected} publicKey={publicKey} initializeUser = {initializeUser} initialized = {initialized} transactionPending = {transactionPending}/>
             <main className="pt-10 pb-20">
                 <FilterMenu />
                 {connected && (
