@@ -5,5 +5,9 @@
 
 
 .phantom-button:hover {
-    background-color: rgb(243 244 246) !important; /* Light grey on hover */
+    background-color: black !important; /* Light grey on hover */
+}
+.wallet-adapter-button{
+    background-color: #ab9ff2!important ;
+
 }

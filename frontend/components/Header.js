@@ -55,7 +55,7 @@ function Header({ connected, publicKey, initializeUser , initialized, transactio
                     <UserCircleIcon className="h-8 w-8" />
                 </div> */}
                 
-                <WalletMultiButton className='phantom-button' startIcon={<UserCircleIcon style={{height:32, width:32, color: '#1f2937'}} />} >
+                <WalletMultiButton className='phantom-button' startIcon={<UserCircleIcon style={{height:32, width:32, color: '#6b55fa'}} />} >
                     <span className='text-sm font-medium borderRadius: 10px' >{connected ? truncate(publicKey.toString()) : "Connect Wallet"}</span>
                 </WalletMultiButton>
             </div>
